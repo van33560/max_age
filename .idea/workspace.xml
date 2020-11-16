@@ -139,7 +139,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605532012586</updated>
-      <workItem from="1605532013723" duration="3771000" />
+      <workItem from="1605532013723" duration="8010000" />
     </task>
     <servers />
   </component>
@@ -155,9 +155,9 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="509" y="183" key="NewPhpClassDialog/0.0.1440.900@0.0.1440.900" timestamp="1605532638228" />
-    <state x="543" y="380" key="NewPhpFileDialog" timestamp="1605532972854">
+    <state x="543" y="380" key="NewPhpFileDialog" timestamp="1605541390274">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="543" y="380" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1605532972854" />
+    <state x="543" y="380" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1605541390274" />
   </component>
 </project>

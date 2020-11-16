@@ -21,8 +21,16 @@ class exo_ageController
         } else {
             printf ("desolée trop jeune ");
         }
-        var_dump($max_age);
-        die;
+        //$request ->request permet de recuperer les donees du post
+        // permet de creer une instance de la class response
+        // et retourner une reponse serveur  je stock le resultat
+        // $response = new response(content:'<h1>hello david'</h1>;
+        // je retourne la variable $response qui contient ma reponse http
+        //return $response
+
+
+       //pour degeuger var_dump($max_age);
+        // pour debeuger die;
 
     }
 
