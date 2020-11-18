@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        {% if profile%}
+    {#pour faire des commentaires avec twig#}
+    {# pour integrer du php dans un fichier twig html #}
+        <h1>{{ profile.name}}-{{profile.firstname }}</h1>
+        <h2>{{ profile.age }}</h2>
+        <p> Le metier de cette personne est</p>
+        <p>{{ profile.job }}</p>
+
+        {% endif %}
+
+
+
+</body>
+</html>
