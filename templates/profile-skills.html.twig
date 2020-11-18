@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+ <main>
+
+     {# le 1er element rappel le nom de mon fichier twig et le 2eme mon array missions #}
+        {% for profileSkills in missions %}
+     {# j'appel les elements de ma listes  #}
+        <li>{{ profileSkills  }}</li>
+        {% endfor %}
+        {# permet de fermer ma boucle #}
+
+ </main>
+
+</body>
+</html>
