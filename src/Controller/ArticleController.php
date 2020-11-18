@@ -14,10 +14,10 @@ class ArticleController extends AbstractController
  */
     //pour récupérer les id apres article /{id}"whild card"
     public function ArticleShowAction($id)
-        //cette variable contiendra le numéro  de l'id
+        //cette methode contiendra le numéro  de l'id dans url
     {
         //tableau
-        $Article = [
+        $Articles = [
             1 => 'Article 1',
             2 => "Article 2",
             3 => "Article 3",
@@ -25,8 +25,13 @@ class ArticleController extends AbstractController
             5 => "Article 5",
             6 => "Article 6",
         ];
-        //j'utilise la methode render qui va recuperer un fichier twig dans un dossier template,et retourner une reponse en http
+        $Article = $Articles[$id];
+
+        //j'utilise la methode render pour récupérer un fichier twig dans un dossier  template
         //retour reponse
-        return $this->render('Article.html.twig');
+        //recupere l'article dans le array variable article
+        return $this->render('Article.html.twig',[
+            'Article'=>$Article
+    ]);
     }
 }
