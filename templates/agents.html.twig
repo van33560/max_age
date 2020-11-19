@@ -8,16 +8,13 @@
 
  <main>
 
-     {% for agents in agents %}
-         {#pour faire des commentaires avec twig#}
-        {% if agents.published == true %}
-         {# pour integrer du php dans un fichier twig html #}
-             <h1>{{ agents.lastName}}</h1>
-             <h2>{{ agents.firstName}}</h2>
-             <h3>{{ agents.age }}</h3>
-             <h4>{{agents.published }}</h4>
-
-         {% endif %}
+     {# ma boucle for permet de passer sur chaque elements de mon tableau #}
+     {% for agent in agents %}
+        {# ma condition me permet d'afficher que les agents publiés #}
+        {% if agent.published %}
+         {# pour afficher le contenu de mon tableau  #}
+            <h1><a href ="{{ path('agentShow',{ 'id':agent.id }) }}">{{ agent.lastName}} {{ agent.firstName}} {{ agent.age }}</a></h1>
+        {% endif %}
      {% endfor %}
  </main>
 
